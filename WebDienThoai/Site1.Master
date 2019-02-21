@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebDienThoai.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Css/StyleSheet1.css" rel="stylesheet" />
+    <link href="Css/w3.css" rel="stylesheet" />
+    <script src="Img/JavaScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <a href="giohang.aspx"><img class="giohang"src="Img/goods.png" /> </a>
+    <form id="form1" runat="server">
+        <div class ="top">
+            <div>
+                <div class="left1">
+                    <a href="WebForm1.aspx"><img src="Img/logo.jpg" /></a>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" ">
+                        <a href="#"><img class="search-icon" src="Img/search-icon.png"></a>
+                    </div>
+                    
+                    
+                </div>
+                <a href="WebForm2.aspx">
+                <div class =" right">
+                    <img src="Img/bar/smartphone-call.png" />
+                    <br />
+                    Điện thoại
+                </div>
+                    </a>
+                <div class =" right">
+                    <img src="Img/bar/computer-tablet.png" />
+                    <br />
+                    Tablet
+                </div>
+                <div class =" right">
+                    <img src="Img/bar/musical-note.png" />
+                    <br />
+                    Âm thanh
+                </div>
+                <div class =" right">
+                    <img src="Img/bar/gift.png" />
+                    <br />
+                    Khuyến mãi
+                </div>
+                <div class =" right">
+                    <img src="Img/bar/tra-gop.svg" />
+                    <br />
+                    Trả góp
+                </div>
+                <div class =" right">
+                    <img src="Img/bar/charger.svg" />
+                    <br />
+                    Phụ kiện
+                </div>
+                
+                <a href="tintuc.aspx">
+                <div class =" right">
+                    <img src="Img/bar/icon_news_black.png" />
+                    <br />
+                    Tin tức
+                </div>
+                </a>
+               <a href="dangnhap.aspx">
+                <div class =" right">
+                    <img src="Img/user.png" />
+                    <br />
+                    Đăng nhập
+                </div>
+                   </a>
+            </div>
+        </div>
+        <div class="br"></div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        <div class =" footerr">
+
+        
+        <div class=" footer">
+            <ul class="cols cols-3">
+                <li>
+                    <div>
+                        <p style="margin-bottom: 20px;"><strong><span style="font-size: large;">Thông tin liên lạc</span></strong></p>
+                        <p>Gọi mua hàng: <span style="font-size: large; color: #ff0000;"><strong><a href="tel:18002097" onclick="actionFn('click-hotline')"><span style="color: #ff0000;">1800.<span style="font-size: x-large;">2097</span></span></a></strong></span><span style="color: #ff0000;"><span style="font-size: large; color: #ff0000;"><strong>&nbsp;<span style="color: #000000;">(Miễn phí)</span></strong></span></span><br> Khiếu nại, góp ý: <a href="tel:18002063"><strong>1800.2063</strong></a>&nbsp;<br> Thời gian phục vụ: <strong><em>8h - 22h</em></strong><br> Email: cskh@cellphones.com.vn</p>
+                     </div>
+                   <div>
+                        <p style="padding: 0;"><strong><span style="font-size: large;">Hệ thống cửa hàng bảo hành - sửa chữa</span></strong></p>
+                        <span>Tổng đài miễn phí: <a href="tel:18002064" ><strong>1800.2064</strong></a></span><br>
+                        <p><a href="#" rel="nofollow"><img src="Img/footer/logo-DTV_cn_1_.png" style="max-width: 52%;"></a></p>
+                    </div>
+
+                </li>
+                <li>
+                    <p style="margin-bottom: 20px;"><strong><span style="font-size: large;">Thông tin hỗ trợ</span></strong> </p>
+                <div class="leftF ">
+                    <ul>
+                        <li><a href="gioithieu.aspx" rel="nofollow" title="Giới thiệu CellphoneS">Giới thiệu</a></li>
+                        <li><a href="#" rel="nofollow">Tin công nghệ Sforum</a>&nbsp;</li>
+                        <li><a href="#" rel="nofollow" title="Chính sách Smember"></a><a href="#">Tra điểm Smember</a></li>
+                        <li><a href="#" rel="nofollow" title="Chính sách bảo hành">Chính sách&nbsp;Bảo hành</a></li>
+                        <li><a href="#" rel="nofollow" title="Chính sách mua hàng từ xa - CellphoneS.com.vn">Mua hàng từ xa</a></li>
+                        <li><a href="#" rel="nofollow" title="Tuyển dụng CellphoneS">Tuyển dụng</a></li>
+                        <li><a href="#" rel="nofollow">Mua hàng - thanh toán Online</a></li>
+                    </ul>
+                <a class="cps-vs" href="#" rel="nofollow" title="Thẻ Visa"></a> <a class="cps-mt" href="#" rel="nofollow" title="Thẻ Master"></a> <a class="cps-atm" href="#" rel="nofollow" title="Thẻ ATM"></a>
+
+                </div>
+                <div class="leftF">
+                    <ul>
+                        <li><a href="#" rel="nofollow" title="Dịch vụ khách hàng Doanh nghiệp">Bán hàng Doanh nghiệp</a></li>
+                        <li><a href="#" rel="nofollow" title="Kiểm tra bảo hành - Dienthoaivui.com.vn" target="_blank">Kiểm tra bảo hành - sửa chữa</a></li>
+                        <li><a href="#" rel="nofollow" title="Quy định về việc sao lưu dữ liệu tại hệ thống cửa hàng CellphoneS và Điện Thoại Vui">Quy định về việc sao lưu dữ liệu</a></li>
+                        <li><a href="#" rel="nofollow" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                        <li><a href="#" rel="nofollow" title="Chính sách sử dụng">Chính sách sử dụng</a></li>
+                        <li><a href="#" rel="nofollow" title="Hướng dẫn huỷ giao dịch, đổi trả">Hướng dẫn huỷ giao dịch, đổi trả</a></li>
+                        <li><a href="#" rel="nofollow" title="Hướng dẫn mua hàng trả góp online qua thẻ tín dụng">Mua hàng trả góp Online</a></li>
+                        <li><a href="#" rel="nofollow" title="Hướng dẫn mua hàng trả góp online qua thẻ tín dụng"></a><a href="#" rel="nofollow" title="Trung tâm bảo hành điện thoại chính hãng">Trung tâm bảo hành chính hãng</a></li>
+                    </ul>
+                <p><a href="#" rel="nofollow"><img src="Img/footer/thongbao.png" style="width: 100px;"></a></p>
+                </div>
+                <div class="clear"></div>
+                <style><!--
+                
+                --></style>
+
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+    </form>
+</body>
+</html>
